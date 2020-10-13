@@ -1,0 +1,4 @@
+<h1>Selection d'Agent</h1>
+<select (change)="surSelect($event.target.value)">
+    <option *ngFor="let ag of agents" [value]="ag.id">{{ag.nom}}</option>
+</select>
